@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>你的名字的主页</title>
+  <title>图片展示</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
-    .avatar { border-radius: 50%; width: 150px; display: block; margin: 0 auto 20px; }
-    .links { text-align: center; margin: 30px 0; }
-    .links a { display: inline-block; margin: 15px; padding: 10px 20px; background: #007bff; color: white; border-radius: 5px; text-decoration: none; }
+    body { 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      margin: 0; 
+      background-color: #f4f4f4; 
+    }
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <img src="你的头像链接" alt="头像" class="avatar">
-  <h1>你的名字</h1>
-  <p>西安·前端开发者｜喜欢咖啡和爬山</p>
-  <div class="links">
-    <a href="https://github.com/你的GitHub">GitHub</a>
-    <a href="mailto:你的邮箱">联系我</a>
+  <div class="image-container">
+    <img src="2.jpg" alt="展示图片">
   </div>
 </body>
 </html>
