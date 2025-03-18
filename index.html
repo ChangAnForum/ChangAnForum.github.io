@@ -3,26 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>第6届网络空间安全前沿论坛(常安论坛)</title>
+  <title>欢迎参加常安论坛！</title>
   <style>
-    body { 
-      display: flex; 
-      justify-content: center; 
-      align-items: center; 
-      height: 100vh; 
-      margin: 0; 
-      background-color: #f4f4f4; 
+    /* 将 body 和 html 设为 100% 高度，去掉默认间距 */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f4f4f4;
     }
+
+    /* 让容器自身占满整个视窗 */
+    .image-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* 图片拉伸满容器：width + height 设置为 100%，并可选择 object-fit 模式 */
     .image-container img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: fill; /* 改成 cover 可保持比例并剪裁图片 */
       display: block;
     }
   </style>
 </head>
 <body>
   <div class="image-container">
-    <img src="2群.jpg" alt="群聊">
+    <img src="image.png" alt="群聊">
   </div>
 </body>
 </html>
